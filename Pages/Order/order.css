@@ -35,7 +35,7 @@ body {
   }
 
   div.top h1 {
-    margin-left: 70px;
+    margin-left: 60px;
   }
 
   div.bottom {
@@ -62,7 +62,7 @@ body {
     font-weight: 400;
     line-height: normal;
     color: black;
-    margin-left: 140px;
+    margin-left: 130px;
     text-decoration: none;
     z-index: 500;
   }
@@ -111,4 +111,8 @@ body {
     border: none;
     border-bottom: 1px solid black;
   }
+}
+
+@media screen and (max-width: 360px) {
+  
 }
