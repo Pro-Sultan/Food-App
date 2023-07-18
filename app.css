@@ -29,7 +29,15 @@ body {
     width: 100%;
     background-color: #ffb14d;
     padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    
   }
+
+  .nav.active, .btn.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
+  }
+
 
   div.top-bar,
   div.search-bar {
@@ -44,7 +52,7 @@ body {
   }
 
   div.search-box {
-    width: 70%;
+    width: 50%;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.7);
     height: 30px;
@@ -67,6 +75,15 @@ body {
     justify-content: space-between;
     position: relative;
   }
+  div.search-profile img{
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .rec.active{
+    display: none;
+    transition: 0.5s ease-in-out;
+   }
 
   section.header img {
     float: right;
@@ -146,17 +163,29 @@ body {
     right: 0;
     bottom: -0%;
     z-index: 10000;
+    transition: 0.5s ease-in-out;
     left: 0;
+
+  }
+
+  .bottom.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
+  }
+  .bottom.active div.home a img{
+    mix-blend-mode: luminosity
   }
 
   div.top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+  div.top img.icon{
+    width: 25px;
+    mix-blend-mode: darken;
   }
 
-  div.top h1 {
-    margin-left: 70px;
-  }
 
   section.about p {
     color: #000;

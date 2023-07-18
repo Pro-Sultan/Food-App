@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../app.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div class="top-bar">
         <div class="clock-bar">
           <img src="../Food Images/clock.png" alt="" class="clock" />
@@ -21,12 +21,16 @@
       </div>
 
       <div class="top" style="margin-top: 25px">
-        <a href="../index.html"> <img src="../Food Images/Backspace.png" alt="" /></a>
+        <a href="../index.html">
+          <img src="../Food Images/Backspace.png" alt=""
+        /></a>
         <h1>Top Rated Offers</h1>
+
+        <img src="../Food Images/dark2.png" alt="" class="icon" />
       </div>
     </nav>
 
-    <section class="offers" style="padding-bottom: 150px;margin-top: 5px;">
+    <section class="offers" style="padding-bottom: 150px; margin-top: 5px">
       <div class="food-box">
         <div class="food-item">
           <img src="../Food Images/food1.png" alt="" />
@@ -66,7 +70,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="food-box">
@@ -108,7 +111,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="food-box">
@@ -150,7 +152,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <div class="food-box">
         <div class="food-item">
@@ -191,7 +192,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="food-box">
@@ -233,22 +233,35 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <div class="bottom">
       <div class="buy">
-        <a href="../Pages/Order/order.html"><img src="../Food Images/Buy.png" alt="" /></a>
+        <a href="../Pages/Order/order.html"
+          ><img src="../Food Images/Buy.png" alt=""
+        /></a>
       </div>
       <div class="home">
         <a href="../index.html"><img src="../Food Images/Home.png" alt="" /></a>
       </div>
       <div class="notification">
-        <a href="../notification.html"><img src="../Food Images/Notification.png" alt="" /></a>
+        <a href="../notification.html"
+          ><img src="../Food Images/Notification.png" alt=""
+        /></a>
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+            const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const bottom = document.querySelector(".bottom");
+
+      dark.addEventListener("click", () =>{
+       nav.classList.toggle("active");
+       bottom.classList.toggle("active");
+      })
+    </script>
+    <script src="../app.js"></script>
   </body>
 </html>

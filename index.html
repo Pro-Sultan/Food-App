@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div class="top-bar">
         <div class="clock-bar">
           <img src="Food Images/clock.png" alt="" class="clock" />
         </div>
 
         <div class="signal-bar">
+
           <img src="Food Images/RFID Signal.png" alt="" class="wifi" />
           <img src="Food Images/Signal.png" alt="" class="signal" />
           <img src="Food Images/Full Battery.png" alt="" class="battery" />
@@ -27,6 +28,7 @@
         </div>
 
         <div class="search-profile">
+          <img src="./Food Images/dark2.png" alt="" class="icon" style="mix-blend-mode: darken;">
             <a href="about.html">
                 <img src="Food Images/About.png" alt="" />
             </a>
@@ -45,7 +47,7 @@
         & get your food delivered<br />
         in a flash.
       </h1>
-      <img src="Food Images/Rectangle.png" alt="" />
+      <img src="Food Images/Rectangle.png" alt="" class="rec"/>
     </section>
 
 
@@ -168,5 +170,24 @@
       </div>
 
     <script src="app.js"></script>
+
+    <script>
+      const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const bottom = document.querySelector(".bottom");
+      const rec = document.querySelector(".rec");
+      const but = document.querySelectorAll(".btn");
+      
+
+      dark.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        bottom.classList.toggle("active");
+        rec.classList.toggle("active");
+        but.forEach((butt) =>{
+          butt.classList.toggle("active");
+        })
+
+      });
+    </script> 
   </body>
 </html>

@@ -15,6 +15,13 @@ body {
     width: 100%;
     background-color: #ffb14d;
     padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    
+  }
+
+  .nav.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
   }
 
   div.top-bar,
@@ -32,11 +39,13 @@ body {
   div.top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+  div.top img.icon{
+    width: 25px;
+    mix-blend-mode: darken;
   }
 
-  div.top h1 {
-    margin-left: 60px;
-  }
 
   div.bottom {
     display: flex;
@@ -110,6 +119,14 @@ body {
 
     border: none;
     border-bottom: 1px solid black;
+  }
+
+  .bottom.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
+  }
+  .bottom.active div.home a img{
+    mix-blend-mode: luminosity
   }
 }
 

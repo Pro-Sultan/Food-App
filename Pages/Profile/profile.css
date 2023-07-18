@@ -615,6 +615,13 @@ body {
     width: 100%;
     background-color: #ffb14d;
     padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    
+  }
+
+  .nav.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
   }
 
   div.top-bar,
@@ -643,6 +650,7 @@ body {
     position: absolute;
     right: 0;
     z-index: 100;
+    transition: 1s ease-in-out;
   }
   section.header img:nth-child(1) {
     text-align: center;
@@ -655,11 +663,14 @@ body {
   div.top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+  div.top img.icon{
+    width: 25px;
+    mix-blend-mode: darken;
   }
 
-  div.top h1 {
-    margin-left: 70px;
-  }
+
 
   div.bottom {
     display: flex;
@@ -671,6 +682,7 @@ body {
     right: 0;
     bottom: -0%;
     z-index: 10000;
+    transition: 0.5s ease-in-out;
     left: 0;
   }
 
@@ -721,6 +733,11 @@ body {
     align-items: center;
     justify-content: space-between;
    }
+
+   .rec.active{
+    display: none;
+    transition: 0.5s ease-in-out;
+   }
    
    button{
     border-radius: 10px;
@@ -730,6 +747,11 @@ margin-right: 5px;
 border: none;
 outline: none;
 font-size: 35px;
+   }
+
+   .but.active{
+    background-color: rgb(135, 131, 131);
+    transition: 0.5s ease-in-out;
    }
 
    div.plus h2{
@@ -750,5 +772,13 @@ font-size: 35px;
     margin-left: 90px;
     text-decoration: none;
     z-index: 500;
+  }
+
+  .bottom.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
+  }
+  .bottom.active div.home a img{
+    mix-blend-mode: luminosity
   }
 }

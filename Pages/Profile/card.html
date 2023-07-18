@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div class="top-bar">
         <div class="clock-bar">
           <img src="../../Food Images/clock.png" alt="" class="clock" />
@@ -28,7 +28,8 @@
         <a href="personal.html">
           <img src="../../Food Images/Backspace.png" alt=""
         /></a>
-        <h1 style="margin-left: 120px">Card</h1>
+        <h1>Card</h1>
+        <img src="../../Food Images/dark2.png" alt="" class="icon">
       </div>
     </nav>
 
@@ -36,7 +37,7 @@
 
     <section class="header">
       <img src="../../Food Images/circle.png" alt="" />
-      <img src="../../Food Images/Rectangle.png" alt="" />
+      <img src="../../Food Images/Rectangle.png" alt="" class="rec"/>
     </section>
 
     <div class="wrapper" id="app">
@@ -158,4 +159,19 @@
   </body>
 
   <script src="card.js"></script>
+
+  <script>
+    const dark = document.querySelector(".icon");
+    const nav = document.querySelector(".nav");
+    const bottom = document.querySelector(".bottom");
+    const rec = document.querySelector(".rec");
+    
+
+    dark.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      bottom.classList.toggle("active");
+      rec.classList.toggle("active");
+
+    });
+  </script> 
 </html>

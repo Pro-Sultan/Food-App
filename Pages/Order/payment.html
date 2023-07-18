@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="order.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <div class="top-bar">
         <div class="clock-bar">
           <img src="../../Food Images/clock.png" alt="" class="clock" />
@@ -25,7 +25,9 @@
             <img src="../../Food Images/Backspace.png" alt="" />
         </a>
   
-        <h1 style="margin-left: 95px;">Payment</h1>
+        <h1>Payment</h1>
+
+        <img src="../../Food Images/dark2.png" alt="" class="icon">
       </div>
       </div>
     </nav>
@@ -70,5 +72,18 @@
       </div>
 
     <script src="app.js"></script>
+
+    <script>
+      const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const bottom = document.querySelector(".bottom");
+      
+
+      dark.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        bottom.classList.toggle("active");
+
+      });
+    </script> 
   </body>
 </html>
