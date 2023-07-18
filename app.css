@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.btn {
+  border-radius: 25px;
+  background: #ffb14d;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  border: 4px solid black;
+  text-decoration: none;
+  z-index: 500;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    height: 110px;
+    width: 100%;
+    background-color: #ffb14d;
+    padding: 10px 20px;
+  }
+
+  div.top-bar,
+  div.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.signal-bar img {
+    width: 25px;
+    margin-right: 2px;
+  }
+
+  div.search-box {
+    width: 70%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    height: 30px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  div.search-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+  }
+
+  section.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  section.header img {
+    float: right;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+  }
+
+  section.header h1 {
+    color: #000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    word-spacing: 4px;
+    line-height: 39px;
+    position: absolute;
+    z-index: 1000;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+
+  section.offers {
+    margin-top: 150px;
+    padding: 10px 15px;
+  }
+
+  div.offer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.food-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  div.food-item h2 {
+    font-size: 17px;
+  }
+
+  div.price-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.price-list h3 {
+    font-size: 15px;
+  }
+  div.star {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.star p {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  div.star img {
+    width: 12px;
+  }
+
+  div.bottom {
+    display: flex;
+    align-items: center;
+    padding: 10px 35px 10px;
+    background-color: #ffb14d;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    bottom: -0%;
+    z-index: 10000;
+    left: 0;
+  }
+
+  div.top {
+    display: flex;
+    align-items: center;
+  }
+
+  div.top h1 {
+    margin-left: 70px;
+  }
+
+  section.about p {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    padding: 0px 15px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+
+  section.about1 h1,   section.about1 p {
+    color: #000;
+    font-family: Tillana;
+    padding: 0px 15px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
