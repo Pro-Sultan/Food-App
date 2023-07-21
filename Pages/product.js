@@ -11,32 +11,39 @@ let pricenum = 1600;
 price.innerHTML = "$" + pricenum 
 
 increase.addEventListener("click", function () {
- 
-   
-
     init++;
+
+    pricenum = 1600 * init
 
     num.innerHTML = init
 
-    pricenum = pricenum * init
+   if(init >10){
+    init = 10
+    pricenum = 16000
+    num.innerHTML = init
+   }
 
     price.innerHTML = "$" + pricenum 
 })
 
 decrease.addEventListener("click", function () {
- 
-
-   
     init--;
+    pricenum = pricenum - 1600
     if(init < 1){
         init = 1
+        pricenum = 1600
 
     }
 
     num.innerHTML = init
 
-    
-    
-    
+    price.innerHTML = "$" + pricenum
+
+})
+
+const cart = document.querySelector(".cart");
+
+cart.addEventListener("click", () =>{
+    console.log(pricenum);
 })
 

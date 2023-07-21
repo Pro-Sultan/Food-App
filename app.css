@@ -25,7 +25,7 @@ body {
 
 @media screen and (max-width: 500px) {
   nav {
-    height: 110px;
+    height: 90px;
     width: 100%;
     background-color: #ffb14d;
     padding: 10px 20px;
@@ -46,25 +46,26 @@ body {
     justify-content: space-between;
   }
 
-  div.signal-bar img {
-    width: 25px;
-    margin-right: 2px;
-  }
 
   div.search-box {
     width: 50%;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.7);
     height: 30px;
-    padding: 10px;
+    padding: 12px;
     display: inline-flex;
+    transition: all 0.5s ease-in-out;
     align-items: center;
   }
+
+
 
   div.search-box input {
     width: 100%;
     background: transparent;
     border: none;
+    color: white;
+    font-size: 15px;
     outline: none;
     padding: 0px 10px;
   }
@@ -77,7 +78,7 @@ body {
   }
   div.search-profile img{
     width: 30px;
-    margin-left: 10px;
+    margin-left: 14px;
   }
 
   .rec.active{

@@ -8,17 +8,6 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="top-bar">
-        <div class="clock-bar">
-          <img src="../../Food Images/clock.png" alt="" class="clock" />
-        </div>
-
-        <div class="signal-bar">
-          <img src="../../Food Images/RFID Signal.png" alt="" class="wifi" />
-          <img src="../../Food Images/Signal.png" alt="" class="signal" />
-          <img src="../../Food Images/Full Battery.png" alt="" class="battery" />
-        </div>
-      </div>
 
       <div class="top" style="margin-top: 25px">
         <a href="order.html">
@@ -49,7 +38,7 @@
 
 
 
-    <a href="" class="btn" style="margin-bottom: 150px;">Done</a>
+    <a href="" class="btn but" style="margin-bottom: 150px;">Done</a>
 
 
 
@@ -77,11 +66,14 @@
       const dark = document.querySelector(".icon");
       const nav = document.querySelector(".nav");
       const bottom = document.querySelector(".bottom");
+      const but = document.querySelector(".but");
       
 
       dark.addEventListener("click", () => {
         nav.classList.toggle("active");
         bottom.classList.toggle("active");
+        but.classList.toggle("active");
+
 
       });
     </script> 
